@@ -1,0 +1,58 @@
+Postup zhotovenia
+
+1) zapojíme oled display SSD1306
+SDA na pin 21
+SCL na pin 22
+GND do GND
+VCC do zdroja 5V
+
+2) zapojíme senzor DHT11
+DAT na pin 15
+GND do GND
+VCC do zdroja 5V
+
+3) Zapojíme bzuciak na pin 12 a GND
+
+4) zapojíme tlaèidlá
+plus na pin 25
+mínus na pin 27
+tlaèidlo pre zmenu > < na pin 32
+všetky do GND
+
+4) zapojíme a nahráme software 
+
+5) používame
+návod použitia:
+prístroj meria teplotu (°C), zobrazuje ju (na display) a hlási keï je mimo vymedzenej hranice (pomocou bzuèiaka)
+
+teplotný senzor DHT11  meria teplotu
+
+obrazovka zobrazuje meranú teplotu a nadstavenú zadanú teplotu (hranicu)
+tlaèidlami meníme hranicu rozmedzia teploty
+tlaèidlo plus + zvýši zadanú teplotu
+tlaèidlo mínus – zníži zadanú teplotu
+tlaèidlo zmena >< mení èi je hranica nad alebo pod zadanou teplotou 
+
+príklad :
+zadaná teplota je 25 °C
+chceme < , teda chceme teplotu pod 25°C 
+nameraná teplota (príklad)
+20°C – to je menej než 25°C, v poriadku
+27°C – viac než 25°C, poplach
+
+
+materiál:
+doska		ESP32-WROOM-32D
+display	OLED 0.96" display 128×64
+senzor	DHT11
++ rôzne kábliky 
++ USB kábel 
+
+https://techfun.sk/produkt/senzor-teploty-a-vlhkosti-dht11/
+https://techfun.sk/produkt/oled-0-96-display-128x64/,
+https://techfun.sk/produkt/esp32-wroom-32d-vyvojova-doska-wifi-a-bluetooth/
+
+https://techfun.sk/produkt/kabliky-40-kusov-30-cm-m-m/
+
+
+
